@@ -1,0 +1,46 @@
+DOKUMENTASI 
+Cara menjalankan aplikasi
+1. Pengguna akan ditampilkan oleh beberapa pertanyaan, yaitu: Nama, Email, dan Nomor Hp.
+2. Setelah Pengguna mengisi semua kolom pertanyaan, Pengguna akan ditampilkan tabel yang berisi data data yang telah diisi di halaman pertanyaan
+
+
+Cara untuk mengatur dan menjalankan database dalam Laravel:
+
+1. Pastikan Server Lokal Berjalan:
+
+Jalankan perintah berikut untuk memastikan server Laravel berjalan:
+
+bash
+
+php artisan serve
+
+2. Buat Database di phpMyAdmin:
+
+- Akses phpMyAdmin melalui browser (biasanya pada URL localhost/phpmyadmin).
+
+- Buat database baru dengan klik "New" dan beri nama database sesuai kebutuhan proyek.
+
+3. Atur Nama Database di File.env :
+
+- Buka file.env di root folder proyek Laravel.
+
+- Cari bagian pengaturan database, kemudian atur DB_DATABASE sesuai dengan nama database yang telah dibuat di phpMyAdmin. 
+env
+
+DB_DATABASE=nama_database
+
+DB USERNAME=root
+
+DB_PASSWORD=
+
+Pastikan juga kredensial lainnya (seperti DB_USERNAME dan DB_PASSWORD) sesuai dengan konfigurasi server lokal.
+
+4. Jalankan Migrasi:
+
+Jika sudah diatur dengan benar, jalankan migrasi untuk membuat tabel dalam database:
+
+bash
+
+php artisan migrate
+
+Dengan langkah-langkah ini, Laravel akan terhubung ke database yang sudah dibuat dan siap digunakan.
